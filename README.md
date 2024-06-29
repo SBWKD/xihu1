@@ -81,18 +81,18 @@
         opacity:1;
       }
       .image_list ul li:nth-of-type(1){
-	    background-image:url("img/雷锋塔.jpeg");
+	    background-image:url("img/雷锋塔.webp");
       }
       .image_list ul li:nth-of-type(3){
 	    background-image:url("img/苏堤.webp");
       }
       
       .image_list ul li:nth-of-type(5){
-        background-image:url("img/断桥.jpg");
+        background-image:url("img/断桥.webp");
       }
       
       .image_list ul li:nth-of-type(7){
-        background-image:url("img/龙井山.jpg");
+        background-image:url("img/龙井山.webp");
       }
 
 
