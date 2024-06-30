@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>目录</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      /* 公用样式 */
+      html,body{
+	    width:100%;
+      	height:100%;
+      	margin:0px;
+		background-image: url("img/1.0.jpg");
+		background-color: #000000;
+		background-repeat:no-repeat;
+		background-size:cover;
+      }
+      ul{
+	    list-style-type:none;
+      	margin:0px auto;
+      	padding:0px;
+      }
+      
+      /* 导航菜单 */
+      .menu{
+      	background-color:#0099ff ;
+		display: flex;
+      	color:#ffffff;
+      	width:100%;
+		justify-content: center;
+      }
+      .menu ul{
+	    width:100%;
+      	background-color:#0099ff ;
+      	display:flex;
+      	justify-content:center;
+      }
+      .menu ul li{
+	    width:200px;
+      	line-height:50px;
+      	text-align:center;
+      }
+		a{
+			color:#ffffff;
+            text-decoration:none;
+            margin-left:50px;
+			}
+            a:hover{
+            color:#FF0000;
+            text-decoration:underline;
+            }
+            a:hover img{
+              opacity:0.5;
+			}
+      /* 图片列表 */
+      .image_list{
+      	margin:50px auto 0px auto;
+	    width:80%;
+      	height:70%;
+		
+		opacity:1;
+      }
+      .image_list ul{
+	    width:115%;
+      	height:100%;
+		
+      	display:flex;
+      	justify-content:space-around;
+      }
+      .image_list ul li{
+      	width:100%;
+      	height:100%;
+      	border-radius:25px;
+      	
+      	background-position:center;
+      	background-repeat:no-repeat;
+      	background-size:auto 100%;
+      	
+      	opacity:0.7;
+      }
+      .image_list ul li:hover{
+        opacity:1;
+      }
+      .image_list ul li:nth-of-type(1){
+	    background-image:url("img/雷锋塔.webp");
+      }
+      .image_list ul li:nth-of-type(3){
+	    background-image:url("img/苏堤.webp");
+      }
+      
+      .image_list ul li:nth-of-type(5){
+        background-image:url("img/断桥.webp");
+      }
+      
+      .image_list ul li:nth-of-type(7){
+        background-image:url("img/龙井山.webp");
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+       <!-- 导航菜单 -->
+       <div class="menu">
+         <ul>
+           <li><a href="https://tian-yu-miao.gitee.io/eaxm">网站首页</a></li>
+           <li><a href="https://meng-feiao.gitee.io/exciting-review">精彩回顾</a></li>
+           <li>了解更多</li>
+           <li>目录</li>
+         </ul>
+       </div>
+       
+       <!-- 图片列表 -->
+       <div class="image_list">
+         <ul>
+           <li font-size="6" color><a href="https://meng-feiao.gitee.io/s-level-events"target="_blank"> 雷
+		   锋
+		   塔</a></font-size></li>
+		   <li></li>
+           <li font-size="6"><a href="https://meng-feiao.gitee.io/intermediate-level-events"target="_blank">  苏 堤</a></font-size></li>
+           <li></li>
+           <li font-size="6" color="blue"><a href="https://meng-feiao.gitee.io/advanced-events"target="_blank">  断桥</a></font-size></li>
+           <li></li>
+           <li font-size="6"><a href=" https://meng-feiao.gitee.io/major"target="_blank">  龙井山</a></font-size></li>
+           <li></li>
+         </ul>
+       </div>
+    
+    
+  </body>
+</html>
+
