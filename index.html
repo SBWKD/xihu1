@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>目录</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      /* 公用样式 */
+      html,body{
+	    width:100%;
+      	height:100%;
+      	margin:0px;
+		background-image: url("img/1.0.jpg");
+		background-color: #000000;
+		background-repeat:no-repeat;
+		background-size:cover;
+      }
+     
+      /* 图片列表 */
+      
+
+
+  
+  /* 雨滴样式 */  
+  .raindrop {  
+    position: absolute;  
+    bottom: 100%;  
+    width: 2px;  
+    height: 100px;  
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));  
+    pointer-events: none;  
+    animation: fall 1s linear infinite;  
+  }  
+  
+  @keyframes fall {  
+    to {  
+      transform: translateY(100vh);  
+    }  
+  }  
+		#goToPageButton {  
+			padding: 20px 40px; /* 增加按钮大小 */  
+            font-size: 20px; /* 增加文字大小 */
+            position: absolute;  
+            left: 50%;  
+            transform: translateX(-50%);  
+            bottom: 10%; /* 调整为页面中下部分的位置 */    
+            cursor: pointer;  
+            background-color: transparent; /* 设置背景为透明 */  
+            border: none; /* 移除边框 */  
+            color: #ffffff; /* 文字颜色 */   
+        }  
+</style>
+  </head>
+  <body>
+  <h1><span style="color: rgba(173, 216, 230, 0.5);"> <p style="text-align: center;">跟随古人脚步, 探寻西湖文化</span></p></h1>
+    
+     
+    <button id="goToPageButton">走入西湖文化</button>  
+    
+  </body>
+<script>  
+  function createRain() {  
+    const numDrops = 100; // 雨滴数量  
+    const rainContainer = document.createElement('div');  
+    rainContainer.style.position = 'fixed';  
+    rainContainer.style.width = '100%';  
+    rainContainer.style.height = '100%';  
+    rainContainer.style.pointerEvents = 'none';  
+    rainContainer.style.top = '0';  
+    rainContainer.style.left = '0';  
+    document.body.appendChild(rainContainer);  
+  
+    for (let i = 0; i < numDrops; i++) {  
+      const drop = document.createElement('div');  
+      drop.className = 'raindrop';  
+      drop.style.left = `${Math.random() * 100}%`;  
+      drop.style.animationDuration = `${1 + Math.random()}s`; // 随机动画持续时间  
+      drop.style.animationDelay = `${Math.random()}s`; // 随机动画延迟  
+      rainContainer.appendChild(drop);  
+    }  
+  }  
+  
+  createRain(); // 调用函数创建雨滴  
+	
+        // 添加按钮点击事件监听器  
+        document.getElementById('goToPageButton').addEventListener('click', function() {  
+    window.location.href = "fenye.html";  
+});
+</script>
+</html>
+
